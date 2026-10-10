@@ -328,46 +328,6 @@ Interrupt       : External Interrupt
 
 
 
-📁 Project Structure
-
-A modular project structure can be maintained as follows:
-
-Smart-Railway-Platform-Clock/
-│
-├── main.c
-│
-├── lcd.c
-├── lcd.h
-│
-├── rtc.c
-├── rtc.h
-│
-├── keypad.c
-├── keypad.h
-│
-├── train.c
-├── train.h
-│
-├── compare.c
-├── compare.h
-│
-├── led.c
-├── led.h
-│
-├── buzzer.c
-├── buzzer.h
-│
-├── interrupt.c
-├── interrupt.h
-│
-├── delay.c
-├── delay.h
-│
-├── README.md
-│
-└── Documentation/
-
-
 
 🧩 Software Modules
 
