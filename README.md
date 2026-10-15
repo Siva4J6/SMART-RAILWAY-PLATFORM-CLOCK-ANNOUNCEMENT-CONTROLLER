@@ -92,7 +92,7 @@ Long train names and information can be displayed using scrolling.
 
 The system is divided into the following major modules:
 
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/1f31d8de-e62e-4310-8b5d-777435ec2bf5" />
+<img width="1280" height="853" alt="WhatsApp Image 2026-10-15 at 9 51 12 PM" src="https://github.com/user-attachments/assets/1b11195f-5a34-499d-8372-a84301074898" />
 
                    
 ⚙️ System Working
