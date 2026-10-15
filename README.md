@@ -121,12 +121,16 @@ Admin Mode is used to modify system configuration.
 Admin Mode Flow
 
 Admin Switch Pressed
+
         ↓
 External Interrupt
+
         ↓
 Admin Mode Activated
+
         ↓
 Authentication
+
         ↓
     ┌───────────────┐
     │ Select Option │
@@ -134,25 +138,27 @@ Authentication
             │
        ┌────┴────┐
        ↓         ↓
+       
      RTC      Train Data
     Update       Update
        │         │
        └────┬────┘
             ↓
+            
       Input Validation
+      
             ↓
     Schedule Validation
+    
             ↓
       Save Valid Data
+      
             ↓
        Normal Mode
-
-
 
 🔑 Admin Functions
 
 The administrator can:
-
 - Update RTC date.
 - Update RTC time.
 - Select train information.
@@ -165,10 +171,7 @@ The administrator can:
 - Check platform timing conflicts.
 - Save valid changes.
 
-
-
 🚆 Train Information
-
 The system maintains information such as:
 
 Train Number
@@ -182,35 +185,27 @@ Platform Number
 Delay Information
 
 Example Train Database
-
 Train No.| Train Name| Destination| Arrival| Departure| Platform| Delay
 12627| Karnataka Express| New Delhi| 06:30| 06:35| 1| 0 min
 12028| Shatabdi Express| Chennai| 07:15| 07:20| 2| 0 min
 12785| Kacheguda Express| Hyderabad| 08:00| 08:05| 3| 20 min
  
-
-
 ⏱️ Train Status Logic
 
 The system compares the current RTC time with the relevant train schedule.
 <img width="1312" height="1199" alt="image" src="https://github.com/user-attachments/assets/77a97e5e-9bc1-40d1-8857-6b44c11849f3" />
 
-            
 📺 LCD Display
-
 The 16×2 LCD provides passenger information such as:
 
 TRAIN: 12627
 KARNATAKA EXPRESS
 
 and relevant information such as:
-
 ARR: 06:30
 PLAT: 1
 
 Long train names can be displayed using LCD scrolling.
-
----
 
 💡 LED Status Indication
 
@@ -228,24 +223,16 @@ Indicates that the train is approaching within the configured time window.
 
 Indicates that the train has a delay.
 
-
-
 🔊 Buzzer
-
 The buzzer provides an audio notification for important train events.
-
 It can be activated when:
 
 - A train is approaching.
 - A relevant schedule condition occurs.
 - An important train-status update is detected.
 
----
-
 ⌨️ Keypad
-
 A 4×4 matrix keypad is used for user input.
-
 It can be used for:
 
 - Admin authentication.
@@ -256,10 +243,7 @@ It can be used for:
 - Platform modification.
 - Data entry.
 
----
-
 ⚡ External Interrupt
-
 The Admin switch is connected to an external interrupt.
 
 Admin Switch
@@ -273,8 +257,6 @@ Admin Mode Flag
 Admin Configuration
 
 This allows the normal display operation to be interrupted when administrator configuration is required.
-
-
 
 🧱 Hardware Requirements
 
@@ -290,8 +272,6 @@ Buzzer| Audio notification
 Push Button/Switch| Admin interrupt
 Power Supply| System power
 
-
-
 💻 Software Requirements
 
 Software / Technology| Purpose
@@ -300,8 +280,6 @@ Keil µVision| Code development and compilation
 Flash Magic| Microcontroller programming
 Proteus| Simulation and testing
 LPC2148| ARM7 embedded platform
-
-
 
 🛠️ Technology Stack
 
@@ -317,9 +295,6 @@ Timekeeping     : RTC
 Alert           : Buzzer
 Status          : LEDs
 Interrupt       : External Interrupt
-
-
-
 
 🧩 Software Modules
 
@@ -363,14 +338,10 @@ Handles external interrupt and Admin Mode activation.
 
 Provides required software delay functions.
 
-
-
 🔄 Overall Program Flow
 <img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/ebe45b40-9a83-446c-b5b6-9d720877bbc8" />
 
               
-
-
 📊 Functional Requirements
 
 The system should be able to:
@@ -390,8 +361,6 @@ The system should be able to:
 - Validate user inputs.
 - Update train information after valid changes.
 
-
-
 🔒 Data Validation
 
 Before storing modified information, the system can validate:
@@ -404,8 +373,6 @@ Before storing modified information, the system can validate:
 - User-entered configuration data.
 
 Only valid information should be stored and used for schedule comparison.
-
-
 
 🧪 Testing
 
@@ -425,15 +392,11 @@ TC10| Train schedule modification| Updated schedule used
 TC11| Train time passed| Next train selected
 TC12| Platform conflict| Conflict detected
 
-
-
 📈 Expected Result
 
 The completed system provides an automated railway platform information mechanism capable of monitoring train schedules using real-time clock information.
 
 The system displays relevant train information on the LCD, indicates train status using LEDs, provides buzzer alerts, and allows authorized modification of RTC and train schedule information through Admin Mode.
-
-
 
 ✅ Advantages
 
@@ -448,8 +411,6 @@ The system displays relevant train information on the LCD, indicates train statu
 - Can be simulated before hardware implementation.
 - Suitable for embedded-system learning and demonstration.
 
-
-
 ⚠️ Limitations
 
 - Train information depends on the data stored in the system.
@@ -458,8 +419,6 @@ The system displays relevant train information on the LCD, indicates train statu
 - LCD size limits the amount of information displayed at one time.
 - RTC accuracy depends on proper RTC configuration and hardware conditions.
 - The system requires administrator updates when schedule information changes.
-
-
 
 🌍 Applications
 
@@ -473,12 +432,8 @@ The concept can be applied to:
 - 🧪 Embedded-system laboratories
 - 📡 Real-time schedule display systems
 
-
-
 🔮 Future Enhancements
-
 The system can be extended with:
-
 - 🌐 Wi-Fi-based live train information.
 - 📱 Mobile application integration.
 - ☁️ Cloud-based schedule management.
@@ -490,10 +445,7 @@ The system can be extended with:
 - 🔔 Advanced notification mechanisms.
 - 🤖 Intelligent prediction of delays.
 
-
-
 🎓 Skills Demonstrated
-
 This project demonstrates practical knowledge of:
 
 - Embedded C
@@ -533,11 +485,9 @@ This project demonstrates practical knowledge of:
 - Debugging and testing
 
 
-
 💼 Why This Project Is Useful for an Embedded Engineer
 
 This project demonstrates how an embedded system can combine hardware peripherals, real-time processing, user input, interrupts, display management, and decision-making logic into one application.
-
 It provides practical exposure to:
 
 Hardware
@@ -590,11 +540,7 @@ LPC2148
           ▼
    Real-Time Monitoring
 
-
-
-
 📸 Project Documentation
-
 The repository can include:
 
 📁 Documentation
@@ -611,7 +557,6 @@ The repository can include:
    ├── Hardware Images
    
    └── Project Report
-
 
 🎥 Project Demonstration
 
@@ -630,11 +575,7 @@ The project demonstration can show:
 11. RTC modification.
 12. Updated schedule operation.
 
-
-
-
 📌 Project Information
-
 Category| Details
 Project Name| Smart Railway Platform Clock & Announcement Controller
 Domain| Embedded Systems
@@ -650,8 +591,6 @@ Interrupt| External Interrupt
 IDE| Keil µVision
 Simulation| Proteus
 Programming Tool| Flash Magic
-
-
 
 🏁 Conclusion
 
