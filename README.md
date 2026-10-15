@@ -497,22 +497,39 @@ The system can be extended with:
 This project demonstrates practical knowledge of:
 
 - Embedded C
+
 - ARM7 architecture
+ 
 - LPC2148 microcontroller
+  
 - RTC programming
+ 
 - LCD interfacing
+  
 - Matrix keypad interfacing
+ 
 - GPIO programming
+ 
 - External interrupts
+  
 - LED control
-- Buzzer control
+  
+- Buzzer contro
+  
 - Time comparison logic
+  
 - Structures in C
+  
 - Modular programming
+  
 - Embedded system design
+  
 - Hardware-software integration
+  
 - Proteus simulation
+  
 - Keil µVision
+  
 - Debugging and testing
 
 
@@ -524,18 +541,25 @@ This project demonstrates how an embedded system can combine hardware peripheral
 It provides practical exposure to:
 
 Hardware
+
    ↓
 Microcontroller
+
    ↓
 Embedded C
+
    ↓
 Peripheral Drivers
+
    ↓
 Real-Time Processing
+
    ↓
 Decision Making
+
    ↓
 User Interface
+
    ↓
 Alerts & Output
 
@@ -545,11 +569,17 @@ Alerts & Output
 LPC2148
    │
    ├── GPIO
+   
    ├── RTC
+   
    ├── External Interrupt
+   
    ├── LCD Interface
+   
    ├── Keypad Interface
+   
    └── Output Control
+   
           │
           ▼
      Embedded C
@@ -569,14 +599,18 @@ The repository can include:
 
 📁 Documentation
    ├── Block Diagram
+   
    ├── Circuit Diagram
+   
    ├── Flowchart
+   
    ├── Project Mind Map
+   
    ├── Simulation Screenshots
+   
    ├── Hardware Images
+   
    └── Project Report
-
-
 
 
 🎥 Project Demonstration
