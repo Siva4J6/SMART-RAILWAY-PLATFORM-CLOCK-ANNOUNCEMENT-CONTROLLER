@@ -88,19 +88,11 @@ The 4×4 matrix keypad is used for entering and modifying train and RTC informat
 
 Long train names and information can be displayed using scrolling.
 
-
-🧩 System Block Diagram
-
-
-<img width="2056" height="765" alt="image" src="https://github.com/user-attachments/assets/3737d61d-a5f2-40e3-a23f-9e930a119ec9" />
-
-
-
 🧠 System Architecture
 
 The system is divided into the following major modules:
 
-<img width="1536" height="1024" alt="ChatGPT Image Oct 1, 2026, 06_47_35 PM" src="https://github.com/user-attachments/assets/16742585-fb3c-4b6f-b3fe-314991879496" />
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/1f31d8de-e62e-4310-8b5d-777435ec2bf5" />
 
                    
 ⚙️ System Working
