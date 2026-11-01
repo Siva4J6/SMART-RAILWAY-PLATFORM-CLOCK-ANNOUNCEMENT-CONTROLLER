@@ -121,16 +121,12 @@ Admin Mode is used to modify system configuration.
 Admin Mode Flow
 
 Admin Switch Pressed
-
         ↓
 External Interrupt
-
         ↓
 Admin Mode Activated
-
         ↓
 Authentication
-
         ↓
     ┌───────────────┐
     │ Select Option │
@@ -138,21 +134,16 @@ Authentication
             │
        ┌────┴────┐
        ↓         ↓
-       
      RTC      Train Data
     Update       Update
        │         │
        └────┬────┘
             ↓
-            
       Input Validation
-      
             ↓
     Schedule Validation
-    
             ↓
       Save Valid Data
-      
             ↓
        Normal Mode
 
@@ -253,7 +244,7 @@ External Interrupt
 Interrupt Service Routine
      ↓
 Admin Mode Flag
-     ↓
+      ↓
 Admin Configuration
 
 This allows the normal display operation to be interrupted when administrator configuration is required.
@@ -491,25 +482,18 @@ This project demonstrates how an embedded system can combine hardware peripheral
 It provides practical exposure to:
 
 Hardware
-
    ↓
 Microcontroller
-
    ↓
 Embedded C
-
    ↓
 Peripheral Drivers
-
    ↓
 Real-Time Processing
-
    ↓
 Decision Making
-
    ↓
 User Interface
-
    ↓
 Alerts & Output
 
