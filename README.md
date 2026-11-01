@@ -468,25 +468,16 @@ Alerts & Output
 LPC2148
    │
    ├── GPIO
-   
    ├── RTC
-   
    ├── External Interrupt
-   
    ├── LCD Interface
-   
    ├── Keypad Interface
-   
    └── Output Control
-   
           │
-          ▼
      Embedded C
           │
-          ▼
    Train Schedule Logic
           │
-          ▼
    Real-Time Monitoring
 
 📸 Project Documentation
