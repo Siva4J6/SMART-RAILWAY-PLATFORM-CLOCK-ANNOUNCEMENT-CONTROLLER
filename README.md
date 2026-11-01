@@ -112,41 +112,6 @@ The system operates mainly in two modes:
 9. Long train names can be displayed using LCD scrolling.
 10. After the relevant train schedule has passed, the system updates the display for the next train.
 
-
-
-🔐 Admin Mode
-
-Admin Mode is used to modify system configuration.
-
-Admin Mode Flow
-
-Admin Switch Pressed
-        ↓
-External Interrupt
-        ↓
-Admin Mode Activated
-        ↓
-Authentication
-        ↓
-    ┌───────────────┐
-    │ Select Option │
-    └───────┬───────┘
-            │
-       ┌────┴────┐
-       ↓         ↓
-     RTC      Train Data
-    Update       Update
-       │         │
-       └────┬────┘
-            ↓
-      Input Validation
-            ↓
-    Schedule Validation
-            ↓
-      Save Valid Data
-            ↓
-       Normal Mode
-
 🔑 Admin Functions
 
 The administrator can:
