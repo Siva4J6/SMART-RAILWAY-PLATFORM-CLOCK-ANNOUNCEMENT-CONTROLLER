@@ -465,25 +465,13 @@ Alerts & Output
 
 🧠 Core Concepts Used
 
-LPC2148
-   │
-   ├── GPIO
-   ├── RTC
-   ├── External Interrupt
-   ├── LCD Interface
-   ├── Keypad Interface
-   └── Output Control
-          │
-     Embedded C
-          │
-   Train Schedule Logic
-          │
-   Real-Time Monitoring
+LPC2148,GPIO,RTC,External Interrupt, LCD Interface, Keypad Interface, Output Control , Embedded C for Train Schedule Logic and  Real-Time Monitoring
 
 📸 Project Documentation
 The repository can include:
 
 📁 Documentation
+
    ├── Block Diagram
    
    ├── Circuit Diagram
